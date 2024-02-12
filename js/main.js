@@ -160,6 +160,11 @@ function setCustomEffects() {
         return 1 + getBaseLog(deepFlow.isHero ? 1.005 : 10, 0.2 * deepFlow.level + 1)
    }
 
+    const profoundMeditation = gameData.taskData["Profound Meditation"]
+    profoundMeditation.getEffect = function () {
+        return 1 + (profoundMeditation.isHero ? 0.01 * (profoundMeditation.level ** 10) : 0.01 * (profoundMeditation.level))
+   }
+
     const temporalDimension = gameData.taskData["Temporal Dimension"]
     temporalDimension.getEffect = function () {
         return 1 + 1.3 * getBaseLog(temporalDimension.isHero ? 1.005 : 10, 2 * temporalDimension.level ** 2 + 1)
@@ -265,7 +270,7 @@ function getDarknessXpGain() {
 function getHappiness() {
     if (gameData.active_challenge == "legends_never_die" || gameData.active_challenge == "the_darkest_time") return 1
 
-    const meditationEffect = getBindedTaskEffect("Meditation")
+    const meditationEffect = getBindedTaskEffect("Meditation") * profoundMeditation.getEffect()
     const butlerEffect = getBindedItemEffect("Butler")
     const mindreleaseEffect = getBindedTaskEffect("Mind Release")
     const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
