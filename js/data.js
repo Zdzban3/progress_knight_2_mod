@@ -5,6 +5,7 @@
     coins: 0,
     days: 365 * 14,
     totalDays: 0,
+    highestDays: 365 * 14,
     evil: 0,
     essence: 0,
     dark_matter: 0,
