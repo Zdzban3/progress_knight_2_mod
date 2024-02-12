@@ -303,7 +303,7 @@ const itemBaseData = {
     "Hypersphere": { name: "Hypersphere", expense: 1e91, effect: 1, description: "Hypercube Gain", heromult: 30, heroeffect: 1e50 },
 
     // Pets
-    "Kitten": { name: "Kitten", expense: 1e4, effect: 1.2, description: "Happiness", heromult: 2, heroeffect: 2 },
+    "Kitten": { name: "Kitten", expense: 0, effect: 1, description: "Happiness", heromult: 1, heroeffect: 1 },
 }
 
 const requirementsBaseData = {
@@ -528,7 +528,7 @@ const requirementsBaseData = {
     "Hypersphere": new CoinRequirement([getQuerySelector("Hypersphere")], [{ requirement: 1e160 }]),
 
     // Pets
-    "Kitten": new CoinRequirement([getQuerySelector("Kitten")], [{ requirement: 1e5 }]),
+    "Kitten": new CoinRequirement([getQuerySelector("Kitten")], [{ requirement: 1 }]),
     
 
     // Milestones
