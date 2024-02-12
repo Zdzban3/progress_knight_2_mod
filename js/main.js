@@ -155,9 +155,14 @@ function setCustomEffects() {
         return multiplier
     }
 
+    const deepFlow = gameData.taskData["Deep Flow"]
+    deepFlow.getEffect = function () {
+        return 1 + getBaseLog(deepFlow.isHero ? 1.005 : 10, 3 * deepFlow.level + 1)
+   }
+
     const temporalDimension = gameData.taskData["Temporal Dimension"]
     temporalDimension.getEffect = function () {
-        return 1 + 1.3 * getBaseLog(temporalDimension.isHero ? 1.005 : 10, 3 * temporalDimension.level ** 5 + 1)
+        return 1 + 1.3 * getBaseLog(temporalDimension.isHero ? 1.005 : 10, 2 * temporalDimension.level ** 2 + 1)
    }
 
     const intimidation = gameData.taskData["Intimidation"]
