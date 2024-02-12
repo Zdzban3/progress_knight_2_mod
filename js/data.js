@@ -187,8 +187,8 @@ const skillBaseData = {
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
     
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
-    "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.002, description: "Hero & Skill XP" },
-    "Deep Flow": { name: "Deep Flow", maxXp: 1e6, heroxp: 41, effect: 0.001, description: "Gamespeed" },
+    "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.01, description: "Hero & Skill XP" },
+    "Deep Flow": { name: "Deep Flow", maxXp: 1e6, heroxp: 41, effect: 0.005, description: "Gamespeed" },
 
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
     "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military XP" },
@@ -403,7 +403,7 @@ const requirementsBaseData = {
     // Subconscious
     "Meditation": new TaskRequirement([getQuerySelector("Meditation")], [{ task: "Concentration", requirement: 30 }, { task: "Productivity", requirement: 20 }]),
     "Focus": new TaskRequirement([getQuerySelector("Focus")], [{ task: "Meditation", requirement: 100 }, { task: "Concentration", requirement: 150 }]),
-    "Deep Flow": new TaskRequirement([getQuerySelector("Deep Flow")], [{ task: "Focus", requirement: 500 }, { task: "Student", requirement: 50 }]),
+    "Deep Flow": new TaskRequirement([getQuerySelector("Deep Flow")], [{ task: "Focus", requirement: 300 }, { task: "Student", requirement: 400 }]),
 
     // Combat
     "Strength": new TaskRequirement([getQuerySelector("Strength")], []),
