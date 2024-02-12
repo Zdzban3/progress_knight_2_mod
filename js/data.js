@@ -423,7 +423,7 @@ const requirementsBaseData = {
     "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Life Essence", requirement: 1500 }, { task: "Archmage", requirement: 15 }]),
     "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Time Warping", requirement: 1900 }, { task: "Deep Flow", requirement: 800 }, { task: "Chronomancer", requirement: 25 }]),
     "All Seeing Eye": new TaskRequirement([getQuerySelector("All Seeing Eye")], [{ task: "Mana Control", requirement: 2350 }, { task: "Chairman", requirement: 100 }]),
-    "Brainwashing": new TaskRequirement([getQuerySelector("Brainwashing")], [{ task: "Imperator", requirement: 100 }]),
+    "Brainwashing": [new TaskRequirement([getQuerySelector("Brainwashing")], [{ task: "Imperator", requirement: 100 }]), new EvilRequirement([getQuerySelector("Brainwashing")], [{ requirement: 10000 }])],
 
     // Dark Magic
     "Dark Influence": new EvilRequirement([getQuerySelector("Dark Influence")], [{ requirement: 1 }]),
