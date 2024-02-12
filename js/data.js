@@ -86,6 +86,7 @@
     dark_matter_shop: {
         // Upgradables.
         dark_orb_generator: 0,
+        deeper_subconscious: 0,
         a_deal_with_the_chairman: 0,
         a_gift_from_god: 0,
         life_coach: 0,
