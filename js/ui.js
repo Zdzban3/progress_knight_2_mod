@@ -607,7 +607,7 @@ function renderDarkMatter() {
 
     renderDarkMatterShopButton("darkOrbGeneratorBuyButton", canBuyDarkOrbGenerator())
     renderDarkMatterShopButton("aMiracleBuyButton", canBuyAMiracle())
-    renderDarkMatterShopButton("deeperSubcounsciousBuyButton", canBuyDeeperSubconscious())
+    renderDarkMatterShopButton("deeperSubconsciousBuyButton", canBuyDeeperSubconscious())
     renderDarkMatterShopButton("aDealWithTheChairmanBuyButton", canBuyADealWithTheChairman())
     renderDarkMatterShopButton("aGiftFromGodBuyButton", canBuyAGiftFromGod())
     renderDarkMatterShopButton("gottaBeFastBuyButton", canBuyGottaBeFast())
