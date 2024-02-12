@@ -59,6 +59,8 @@ const tooltips = {
     "Meditation": "Fill your mind with peace and tranquility to tap into greater happiness from within.",
     "Focus": "Through intense focus quicken the pace at which you learn new things.",
     "Deep Flow": "Learn to become fully immersed in your work, resulting in a transformation of your sense of time.",
+    "Self-Study": "Practise studying your own behavior to understand yourself better.",
+    "Profound Meditation": "Deepening your understanding of meditation will lead to even better meditative practices.",
 
     // Combat
     "Strength": "Condition your body and strength through harsh training. Stronger individuals are paid more in the military.",
