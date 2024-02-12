@@ -413,7 +413,7 @@ const requirementsBaseData = {
     "Focus": new TaskRequirement([getQuerySelector("Focus")], [{ task: "Meditation", requirement: 100 }, { task: "Concentration", requirement: 150 }]),
     "Deep Flow": new TaskRequirement([getQuerySelector("Deep Flow")], [{ task: "Focus", requirement: 300 }, { task: "Student", requirement: 400 }]),
     "Self-Study": new TaskRequirement([getQuerySelector("Self-Study")], [{ task: "Focus", requirement: 1500 }, { task: "Meditation", requirement: 2000 }, { task: "Master Wizard", requirement: 500 }]),
-    "Profound Meditation": new TaskRequirement([getQuerySelector("Profound Meditation")], [{ task: "Meditation", requirement: 4000 }, { task: "Self-Study", requirement: 1500 }]),
+    "Profound Meditation": new TaskRequirement([getQuerySelector("Profound Meditation")], [{ task: "Meditation", requirement: 4000 }, { task: "Self-Study", requirement: 2400 }]),
 
     // Magic
     "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Focus", requirement: 40 }, { task: "Meditation", requirement: 200 }]),
