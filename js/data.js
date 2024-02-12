@@ -418,9 +418,9 @@ const requirementsBaseData = {
     // Magic
     "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Focus", requirement: 40 }, { task: "Meditation", requirement: 200 }]),
     "Life Essence": new TaskRequirement([getQuerySelector("Life Essence")], [{ task: "Mana Control", requirement: 450 }, { task: "Focus", requirement: 100 }, { task: "Apprentice Mage", requirement: 10 }]),
-    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Focus", requirement: 200 }, { task: "Adept Mage", requirement: 10 }]),
-    "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Life Essence", requirement: 1000 }, { task: "Archmage", requirement: 15 }]),
-    "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Time Warping", requirement: 1000 }, { task: "Deep Flow", requirement: 200 }, { task: "Chronomancer", requirement: 25 }]),
+    "Time Warping": new TaskRequirement([getQuerySelector("Time Warping")], [{ task: "Focus", requirement: 250 }, { task: "Adept Mage", requirement: 10 }]),
+    "Astral Body": new TaskRequirement([getQuerySelector("Astral Body")], [{ task: "Life Essence", requirement: 1500 }, { task: "Archmage", requirement: 15 }]),
+    "Temporal Dimension": new TaskRequirement([getQuerySelector("Temporal Dimension")], [{ task: "Time Warping", requirement: 1800 }, { task: "Deep Flow", requirement: 800 }, { task: "Chronomancer", requirement: 25 }]),
     "All Seeing Eye": new TaskRequirement([getQuerySelector("All Seeing Eye")], [{ task: "Mana Control", requirement: 2350 }, { task: "Chairman", requirement: 100 }]),
     "Brainwashing": new TaskRequirement([getQuerySelector("Brainwashing")], [{ task: "Imperator", requirement: 100 }]),
 
