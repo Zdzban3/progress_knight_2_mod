@@ -1,6 +1,7 @@
 version e1.0.2 / 12.02.2024
 * Added 1 new skill
 * Changed requirements for Magic skills and T.A.A. jobs
+* Changed scaling for Time Warping, Temporal Dimension and Deep Flow
 
 version e1.0.1 / 12.02.2024
 * Added a new skill category with 3 new skills
