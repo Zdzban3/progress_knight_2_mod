@@ -54,6 +54,8 @@ function addMultipliers() {
         } else if (task.name == "Strength") {
             task.xpMultipliers.push(getBindedTaskEffect("Muscle Memory"))
             task.xpMultipliers.push(getBindedItemEffect("Dumbbells"))
+        } else if (skillCategories["Subconscious"].includes(task.name)) {
+            task.xpMultipliers.push(getBindedItemEffect("Self-Study"))
         } else if (skillCategories["Magic"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Sapphire Charm"))
             task.xpMultipliers.push(getBindedItemEffect("Observatory"))
