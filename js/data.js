@@ -187,6 +187,8 @@ const skillBaseData = {
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
     
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
+    "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.002, description: "Hero & Skill XP" },
+    "Deep Flow": { name: "Deep Flow", maxXp: 1e6, heroxp: 41, effect: 0.001, description: "Gamespeed" },
 
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
     "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military XP" },
@@ -300,6 +302,7 @@ const itemBaseData = {
 const requirementsBaseData = {
     // Categories
     "The Arcane Association": new TaskRequirement([removeSpaces(".The Arcane Association")], [{ task: "Concentration", requirement: 200 }, { task: "Meditation", requirement: 200 }]),
+    "Subconscious": new TaskRequirement([removeSpaces(".Subconscious")], [{ task: "Concentration", requirement: 20 }]),
     "Galactic Council": new AgeRequirement([removeSpaces(".Galactic Council")], [{ requirement: 10000 }]),
     "The Void": new AgeRequirement([removeSpaces(".The Void")], [{ requirement: 1000 }]),
     "Void Manipulation": new AgeRequirement([removeSpaces(".Void Manipulation")], [{ requirement: 1000 }]),
@@ -399,6 +402,8 @@ const requirementsBaseData = {
 
     // Subconscious
     "Meditation": new TaskRequirement([getQuerySelector("Meditation")], [{ task: "Concentration", requirement: 30 }, { task: "Productivity", requirement: 20 }]),
+    "Focus": new TaskRequirement([getQuerySelector("Focus")], [{ task: "Meditation", requirement: 100 }, { task: "Concentration", requirement: 150 }]),
+    "Deep Flow": new TaskRequirement([getQuerySelector("Deep Flow")], [{ task: "Focus", requirement: 500 }, { task: "Student", requirement: 50 }]),
 
     // Combat
     "Strength": new TaskRequirement([getQuerySelector("Strength")], []),
@@ -566,7 +571,7 @@ const jobCategories = {
 
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining"],
-    "Subconscious": ["Meditation"],
+    "Subconscious": ["Meditation", "Focus", "Deep Flow"],
     "Combat": ["Strength", "Battle Tactics", "Muscle Memory"],
     "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
     "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
