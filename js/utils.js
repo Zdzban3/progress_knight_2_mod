@@ -59,6 +59,7 @@ function getCoinsData() {
             { "name": "g", "color": "#E5C100", "value": 10000 },
             { "name": "s", "color": "#a8a8a8", "value": 100 },
             { "name": "c", "color": "#a15c2f", "value": 1 },
+            { "name": "w", "color": "#633f24", "value": 1e-3 },
         ];
         case 4: return [
             { "name": "∞", "color": "#000000", "value": 1.158e77, "class": "currency-shadow-rainbow" },
