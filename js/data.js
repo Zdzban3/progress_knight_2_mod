@@ -301,6 +301,9 @@ const itemBaseData = {
     "Desintegration": { name: "Desintegration", expense: 1e55, effect: 1, description: "Dark Matter Gain", heromult: 30, heroeffect: 100 },
     "Custom Galaxy": { name: "Custom Galaxy", expense: 1e64, effect: 1, description: "Skill XP", heromult: 30, heroeffect: 1e100 },
     "Hypersphere": { name: "Hypersphere", expense: 1e91, effect: 1, description: "Hypercube Gain", heromult: 30, heroeffect: 1e50 },
+
+    // Pets
+    "Kitten": { name: "Kitten", expense: 1e4, effect: 1.2, description: "Happiness", heromult: 2, heroeffect: 2 },
 }
 
 const requirementsBaseData = {
@@ -523,6 +526,9 @@ const requirementsBaseData = {
     "Desintegration": new CoinRequirement([getQuerySelector("Desintegration")], [{ requirement: 1e122 }]),
     "Custom Galaxy": new CoinRequirement([getQuerySelector("Custom Galaxy")], [{ requirement: 1e134 }]),
     "Hypersphere": new CoinRequirement([getQuerySelector("Hypersphere")], [{ requirement: 1e160 }]),
+
+    // Pets
+    "Kitten": new CoinRequirement([getQuerySelector("Kitten")], [{ requirement: 1e5 }]),
     
 
     // Milestones
@@ -591,6 +597,7 @@ const skillCategories = {
 const itemCategories = {
     "Properties": ["Homeless", "Tent", "Wooden Hut", "Cottage", "House", "Large House", "Small Palace", "Grand Palace", "Town Ruler", "City Ruler", "Nation Ruler", "Pocket Dimension", "Void Realm", "Void Universe", "Astral Realm", "Galactic Throne", "Spaceship", "Planet", "Ringworld", "Stellar Neighborhood", "Galaxy", "Supercluster", "Galaxy Filament", "Observable Universe", "Multiverse", "Quantum World", "Boötes Void"],
     "Misc": ["Book", "Dumbbells", "Personal Squire", "Steel Longsword", "Butler", "Sapphire Charm", "Study Desk", "Library", "Observatory", "Mind's Eye", "Void Necklace", "Void Armor", "Void Blade", "Void Orb", "Void Dust", "Celestial Robe", "Universe Fragment", "Multiverse Fragment", "Stairway to heaven", "Highway to hell", "Tesseract", "Desintegration", "Custom Galaxy", "Hypersphere"]
+    "Pets": ["Kitten"]
 }
 
 const headerRowColors = {
@@ -612,6 +619,7 @@ const headerRowColors = {
     "Misc_Auto": "#f54546",
     "Properties": "#219ebc",
     "Misc": "#b56576",
+    "Pets": "#7ce667",
     "Essence Milestones": "#0066ff",
     "Heroic Milestones": "#ff6600",
     "Dark Milestones": "#873160",
@@ -638,6 +646,7 @@ const headerRowTextColors = {
     "Misc_Auto": "purple",
     "Properties": "purple",
     "Misc": "purple",
+    "Pets": "purple",
     "Essence Milestones": "purple",
     "Heroic Milestones": "purple",
     "Dark Milestones": "purple",
