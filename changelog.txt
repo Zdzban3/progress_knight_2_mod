@@ -1,3 +1,7 @@
+version e1.0.0 / 12.02.2024
+* Added a new currency notation
+* Changed the font
+
 version 2.3.3 / 31.07.2023
 * Reduce the time warping effect in the Legends never die challenge so it can always be completed.
 * Rename "Dark Matter Skills" to "Dark Matter abilities" to prevent confusion.
