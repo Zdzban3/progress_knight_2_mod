@@ -651,6 +651,9 @@ function renderSettings() {
     document.getElementById("playedRealTimeDisplay").textContent = formatTime(gameData.realtimeRun)
 
     document.getElementById("playedGameTimeDisplay").textContent = format(gameData.totalDays, 2)
+    
+    document.getElementById("playedHighestTimeDisplayDays").textContent = format(gameData.highestDays)
+    document.getElementById("playedHighestTimeDisplayYears").textContent = format(daysToYears(gameData.highestDays))
 
     if (gameData.rebirthOneCount > 0)
         document.getElementById("statsRebirth1").classList.remove("hidden")
