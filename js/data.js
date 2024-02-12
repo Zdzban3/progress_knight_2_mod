@@ -194,6 +194,7 @@ const skillBaseData = {
     "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.01, description: "Hero & Skill XP" },
     "Deep Flow": { name: "Deep Flow", maxXp: 1e6, heroxp: 41, effect: 0.005, description: "Gamespeed" },
     "Self-Study": { name: "Self-Study", maxXp: 1e9, heroxp: 42, effect: 0.02, description: "Subconscious XP" },
+    "Profound Meditation": { name: "Profound Meditation", maxXp: 1e12, heroxp: 43, effect: 0.02, description: "Meditation XP" },
 
     "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "T.A.A. XP" },
     "Life Essence": { name: "Life Essence", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
@@ -412,6 +413,7 @@ const requirementsBaseData = {
     "Focus": new TaskRequirement([getQuerySelector("Focus")], [{ task: "Meditation", requirement: 100 }, { task: "Concentration", requirement: 150 }]),
     "Deep Flow": new TaskRequirement([getQuerySelector("Deep Flow")], [{ task: "Focus", requirement: 300 }, { task: "Student", requirement: 400 }]),
     "Self-Study": new TaskRequirement([getQuerySelector("Self-Study")], [{ task: "Focus", requirement: 1500 }, { task: "Meditation", requirement: 2000 }, { task: "Master Wizard", requirement: 500 }]),
+    "Profound Meditation": new TaskRequirement([getQuerySelector("Profound Meditation")], [{ task: "Meditation", requirement: 4000 }, { task: "Self-Study", requirement: 1500 }]),
 
     // Magic
     "Mana Control": new TaskRequirement([getQuerySelector("Mana Control")], [{ task: "Focus", requirement: 40 }, { task: "Meditation", requirement: 200 }]),
@@ -574,8 +576,8 @@ const jobCategories = {
 
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining"],
-    "Subconscious": ["Meditation", "Focus", "Deep Flow", "Self-Study"],
     "Combat": ["Strength", "Battle Tactics", "Muscle Memory"],
+    "Subconscious": ["Meditation", "Focus", "Deep Flow", "Self-Study", "Profound Meditation"],
     "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
     "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
     "Void Manipulation": ["Absolute Wish", "Void Amplification", "Mind Release", "Ceaseless Abyss", "Void Symbiosis", "Void Embodiment", "Abyss Manipulation"],
