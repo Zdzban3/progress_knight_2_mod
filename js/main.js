@@ -652,6 +652,9 @@ function autoBuy() {
 function increaseDays() {
     gameData.days += applySpeed(1)
     gameData.totalDays += applySpeed(1)
+    if (gameData.days > gameData.highestDays) {
+        gameData.highestDays = gameData.days
+    }
 }
 
 function increaseRealtime() {
