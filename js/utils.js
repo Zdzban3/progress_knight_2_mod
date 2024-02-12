@@ -60,6 +60,33 @@ function getCoinsData() {
             { "name": "s", "color": "#a8a8a8", "value": 100 },
             { "name": "c", "color": "#a15c2f", "value": 1 },
         ];
+        case 4: return [
+            { "name": "∞", "color": "#000000", "value": 1.158e77, "class": "currency-shadow-rainbow" },
+            { "name": " 𒀱", "color": "#ffffff", "value": 1e69, "class": "currency-shadow-rainbow" },
+            { "name": " 𒇫", "color": "#66ccff", "value": 1e66, "class": "currency-shadow" },
+            { "name": "Ω", "color": "#e3980e", "value": 1e63, "class": "currency-bold" },
+            { "name": "🜊", "color": "#00ff00", "value": 1e60, "class": "currency-bold" },
+            { "name": "❁", "color": "#ed82e4", "value": 1e57 },
+            { "name": "✹", "color": "#ffffcc", "value": 1e54 },
+            { "name": "∰", "color": "#ff0083", "value": 1e51 },
+            { "name": "⌬", "color": "#47472d", "value": 1e48 },
+            { "name": "❆", "color": "#47fff9", "value": 1e45 },
+            { "name": "Φ", "color": "#27b897", "value": 1e42 },
+            { "name": "Ξ", "color": "#cd72ff", "value": 1e39 },
+            { "name": "Δ", "color": "#f5c211", "value": 1e36 },
+            { "name": "d", "color": "#d8f2f2", "value": 1e33 },
+            { "name": "o", "color": "#c8eb8f", "value": 1e30 },
+            { "name": "r", "color": "#ed333b", "value": 1e27 },
+            { "name": "S", "color": "#6666ff", "value": 1e24 },
+            { "name": "e", "color": "#2ec27e", "value": 1e21 },
+            { "name": "t", "color": "#ff9924", "value": 1e18 },
+            { "name": "a", "color": "#b65fe8", "value": 1e15 },
+            { "name": "q", "color": "#f2e6d8", "value": 1e12 },
+            { "name": "p", "color": "#79b9c7", "value": 1e9 },
+            { "name": "g", "color": "#E5C100", "value": 1e6 },
+            { "name": "s", "color": "#a8a8a8", "value": 1e3 },
+            { "name": "c", "color": "#a15c2f", "value": 1 },
+        ];
         case 2: return [
             { "name": "", "color": "#E5C100", "value": 240, "prefix": "£" },
             { "name": "s", "color": "#a8a8a8", "value": 12 },
@@ -85,6 +112,7 @@ function formatCoins(coins, element) {
         case 0:
         case 1:
         case 2:
+        case 4:
             const money2 = getCoinsData()
 
             let coinsUsed = 0
