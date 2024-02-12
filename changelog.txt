@@ -1,3 +1,7 @@
+version e1.0.3 / 12.02.2024
+* Added 1 new dark orb buyable
+* Added highest days stat
+
 version e1.0.2 / 12.02.2024
 * Added 1 new skill
 * Changed requirements for Magic skills and T.A.A. jobs
