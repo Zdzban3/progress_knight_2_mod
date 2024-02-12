@@ -270,7 +270,8 @@ function getDarknessXpGain() {
 function getHappiness() {
     if (gameData.active_challenge == "legends_never_die" || gameData.active_challenge == "the_darkest_time") return 1
     const profoundMeditation = gameData.taskData["Profound Meditation"]
-    const meditationEffect = getBindedTaskEffect("Meditation") * profoundMeditation.getEffect()
+    const meditationEffect = getBindedTaskEffect("Meditation") 
+    const meditationEffectActual = profoundMeditation.getEffect() * meditationEffect
     const butlerEffect = getBindedItemEffect("Butler")
     const mindreleaseEffect = getBindedTaskEffect("Mind Release")
     const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
