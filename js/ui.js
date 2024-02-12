@@ -650,7 +650,8 @@ function renderSettings() {
     document.getElementById("playedDaysDisplay").textContent = format((currentDate.getTime() - date.getTime()) / (1000 * 3600 * 24), 2)
     document.getElementById("playedRealTimeDisplay").textContent = formatTime(gameData.realtimeRun)
 
-    document.getElementById("playedGameTimeDisplay").textContent = format(gameData.totalDays, 2)
+    document.getElementById("playedGameTimeDisplayDays").textContent = format(gameData.totalDays)
+    document.getElementById("playedGameTimeDisplayYears").textContent = format(daysToYears(gameData.totalDays))
     
     document.getElementById("playedHighestTimeDisplayDays").textContent = format(gameData.highestDays)
     document.getElementById("playedHighestTimeDisplayYears").textContent = format(daysToYears(gameData.highestDays))
