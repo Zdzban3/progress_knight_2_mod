@@ -282,7 +282,7 @@ function getHappiness() {
     const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
     const stairWayToHeaven = getBindedItemEffect("Stairway to heaven")
-    const happiness = godsBlessings * meditationEffect() * butlerEffect() * mindreleaseEffect()
+    const happiness = godsBlessings * meditationEffect() * kittenEffect() * butlerEffect() * mindreleaseEffect()
         * multiverseFragment() * gameData.currentProperty.getEffect() * getChallengeBonus("an_unhappy_life") * stairWayToHeaven()
 
     if (gameData.active_challenge == "dance_with_the_devil") return Math.pow(happiness, 0.075)
