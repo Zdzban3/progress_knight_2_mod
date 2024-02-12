@@ -189,6 +189,7 @@ const skillBaseData = {
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
     "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.01, description: "Hero & Skill XP" },
     "Deep Flow": { name: "Deep Flow", maxXp: 1e6, heroxp: 41, effect: 0.005, description: "Gamespeed" },
+    "Self-Study": { name: "Self-Study", maxXp: 1e9, heroxp: 42, effect: 0.02, description: "Subconscious XP" },
 
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
     "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military XP" },
@@ -404,6 +405,7 @@ const requirementsBaseData = {
     "Meditation": new TaskRequirement([getQuerySelector("Meditation")], [{ task: "Concentration", requirement: 30 }, { task: "Productivity", requirement: 20 }]),
     "Focus": new TaskRequirement([getQuerySelector("Focus")], [{ task: "Meditation", requirement: 100 }, { task: "Concentration", requirement: 150 }]),
     "Deep Flow": new TaskRequirement([getQuerySelector("Deep Flow")], [{ task: "Focus", requirement: 300 }, { task: "Student", requirement: 400 }]),
+    "Self-Study": new TaskRequirement([getQuerySelector("Self-Study")], [{ task: "Focus", requirement: 1500 }, { task: "Meditation", requirement: 2000 }, { task: "Master Wizard", requirement: 500 }]),
 
     // Combat
     "Strength": new TaskRequirement([getQuerySelector("Strength")], []),
@@ -571,7 +573,7 @@ const jobCategories = {
 
 const skillCategories = {
     "Fundamentals": ["Concentration", "Productivity", "Bargaining"],
-    "Subconscious": ["Meditation", "Focus", "Deep Flow"],
+    "Subconscious": ["Meditation", "Focus", "Deep Flow", "Self-Study"],
     "Combat": ["Strength", "Battle Tactics", "Muscle Memory"],
     "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
     "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
