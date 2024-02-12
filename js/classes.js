@@ -341,6 +341,17 @@ class AgeRequirement extends Requirement {
     }
 }
 
+class HighestAgeRequirement extends Requirement {
+    constructor(querySelectors, requirements) {
+        super(querySelectors, requirements)
+        this.type = "highestAge"
+    }
+
+    getCondition(isHero, requirement) {
+        return daysToYears(gameData.highestDays) >= requirement.requirement
+    }
+}
+
 class EvilRequirement extends Requirement {
     constructor(querySelectors, requirements) {
         super(querySelectors, requirements)
