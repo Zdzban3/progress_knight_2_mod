@@ -580,6 +580,9 @@ function renderDarkMatter() {
     document.getElementById("darkOrbGeneratorCost").textContent = format(getDarkOrbGeneratorCost())
     document.getElementById("darkOrbGenerator").textContent = format(getDarkOrbGeneration())
 
+    document.getElementById("deeperSubconsciousCost").textContent = format(getDeeperSubconsciousCost())
+    document.getElementById("deeperSubconsciousEffect").textContent = format(getDeeperSubconsciousXpGain())
+
     document.getElementById("aDealWithTheChairmanCost").textContent = format(getADealWithTheChairmanCost())
     document.getElementById("aDealWithTheChairmanEffect").textContent = format(getTaaAndMagicXpGain())
 
