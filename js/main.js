@@ -54,6 +54,8 @@ function addMultipliers() {
         } else if (task.name == "Strength") {
             task.xpMultipliers.push(getBindedTaskEffect("Muscle Memory"))
             task.xpMultipliers.push(getBindedItemEffect("Dumbbells"))
+        } else if (task.name == "Meditation") {
+            task.xpMultipliers.push(getBindedTaskEffect("Profound Meditation"))
         } else if (skillCategories["Subconscious"].includes(task.name)) {
             task.xpMultipliers.push(getBindedTaskEffect("Self-Study"))
         } else if (skillCategories["Magic"].includes(task.name)) {
@@ -271,13 +273,12 @@ function getHappiness() {
     if (gameData.active_challenge == "legends_never_die" || gameData.active_challenge == "the_darkest_time") return 1
     const profoundMeditation = gameData.taskData["Profound Meditation"]
     const meditationEffect = getBindedTaskEffect("Meditation") 
-    const meditationEffectActual = profoundMeditation.getEffect() * meditationEffect
     const butlerEffect = getBindedItemEffect("Butler")
     const mindreleaseEffect = getBindedTaskEffect("Mind Release")
     const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
     const stairWayToHeaven = getBindedItemEffect("Stairway to heaven")
-    const happiness = godsBlessings * meditationEffectActual * butlerEffect() * mindreleaseEffect()
+    const happiness = godsBlessings * meditationEffect() * butlerEffect() * mindreleaseEffect()
         * multiverseFragment() * gameData.currentProperty.getEffect() * getChallengeBonus("an_unhappy_life") * stairWayToHeaven()
 
     if (gameData.active_challenge == "dance_with_the_devil") return Math.pow(happiness, 0.075)
