@@ -157,7 +157,7 @@ function setCustomEffects() {
 
     const deepFlow = gameData.taskData["Deep Flow"]
     deepFlow.getEffect = function () {
-        return 1 + getBaseLog(deepFlow.isHero ? 1.005 : 10, 3 * deepFlow.level + 1)
+        return 1 + getBaseLog(deepFlow.isHero ? 1.005 : 10, 0.2 * deepFlow.level + 1)
    }
 
     const temporalDimension = gameData.taskData["Temporal Dimension"]
