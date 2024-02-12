@@ -58,6 +58,7 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedTaskEffect("Profound Meditation"))
         } else if (skillCategories["Subconscious"].includes(task.name)) {
             task.xpMultipliers.push(getBindedTaskEffect("Self-Study"))
+            task.xpMultipliers.push(getDeeperSubconsciousXpGain)
         } else if (skillCategories["Magic"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Sapphire Charm"))
             task.xpMultipliers.push(getBindedItemEffect("Observatory"))
