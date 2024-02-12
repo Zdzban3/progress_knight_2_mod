@@ -277,6 +277,7 @@ function getHappiness() {
     const profoundMeditation = gameData.taskData["Profound Meditation"]
     const meditationEffect = getBindedTaskEffect("Meditation") 
     const butlerEffect = getBindedItemEffect("Butler")
+    const kittenEffect = getBindedItemEffect("Kitten")
     const mindreleaseEffect = getBindedTaskEffect("Mind Release")
     const multiverseFragment = getBindedItemEffect("Multiverse Fragment")
     const godsBlessings = gameData.requirements["God's Blessings"].isCompleted() ? 10000000 : 1
@@ -1446,6 +1447,7 @@ createGameObjects(milestoneData, milestoneBaseData)
 gameData.currentJob = gameData.taskData["Beggar"]
 gameData.currentProperty = gameData.itemData["Homeless"]
 gameData.currentMisc = []
+gameData.currentPets = []
 
 gameData.requirements = requirementsBaseData
 
