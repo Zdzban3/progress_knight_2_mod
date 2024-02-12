@@ -16,6 +16,21 @@ function buyDarkOrbGenerator() {
 }
 
 // Costs Dark Orbs
+function getDeeperSubconsciousCost() {
+    return Math.pow(10, gameData.dark_matter_shop.deeper_subconscious + 1)
+}
+
+function canBuyDeeperSubconscious() {
+    return gameData.dark_orbs >= getDeeperSubconsciousCost() && getDeeperSubconsciousCost() != Infinity
+}
+
+function buyDeeperSubconscious() {
+    if (canBuyDeeperSubconscious()) {
+        gameData.dark_orbs -= getDeeperSubconsciousCost()
+        gameData.dark_matter_shop.deeper_subconscious += 1
+    }
+}
+
 function getADealWithTheChairmanCost() {
     return Math.pow(1e3, gameData.dark_matter_shop.a_deal_with_the_chairman + 1)
 }
@@ -83,6 +98,12 @@ function getDarkOrbGeneration() {
     const darkOrbiter = gameData.requirements["Dark Orbiter"].isCompleted() ? 1e10 : 1
 
     return Math.pow(100, gameData.dark_matter_shop.dark_orb_generator - 1) * darkOrbiter
+}
+
+function getDeeperSubconsciousXpGain() {
+    if (gameData.active_challenge == "the_darkest_time") return 1
+
+    return Math.pow(1.2, gameData.dark_matter_shop.deeper_subconscious)
 }
 
 function getTaaAndMagicXpGain() {
