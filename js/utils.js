@@ -43,9 +43,9 @@ function getCoinsData() {
         ];
         case 1: return [
             { "name": " 𒀱", "color": "#ffffff", "value": 1e62, "class": "currency-shadow-rainbow" },
-            { "name": " 𒀱", "color": "#ffffff", "value": 1e47, "class": "currency-shadow" },
+            { "name": "  𒀱", "color": "#ffffff", "value": 1e47, "class": "currency-shadow" },
             { "name": " 𒇫", "color": "#66ccff", "value": 1e41, "class": "currency-shadow" },
-            { "name": "🜊", "color": "#00ff00", "value": 1e35, "class": "currency-bold" },
+            { "name": " 🜊", "color": "#00ff00", "value": 1e35, "class": "currency-bold" },
             { "name": "✹", "color": "#ffffcc", "value": 1e30 },
             { "name": "∰", "color": "#ff0083", "value": 1e26 },
             { "name": "Φ", "color": "#27b897", "value": 1e23 },
@@ -63,9 +63,9 @@ function getCoinsData() {
         ];
         case 4: return [
             { "name": "∞", "color": "#000000", "value": 1.158e77, "class": "currency-shadow-rainbow" },
-            { "name": "𒇫", "color": "#66ccff", "value": 1e66, "class": "currency-shadow" },
+            { "name": " 𒇫", "color": "#66ccff", "value": 1e66, "class": "currency-shadow" },
             { "name": "Ω", "color": "#e3980e", "value": 1e63, "class": "currency-shadow" },
-            { "name": "🜊", "color": "#00ff00", "value": 1e60, "class": "currency-bold" },
+            { "name": " 🜊", "color": "#00ff00", "value": 1e60, "class": "currency-bold" },
             { "name": "❁", "color": "#ed82e4", "value": 1e57, "class": "currency-bold" },
             { "name": "✹", "color": "#ffffcc", "value": 1e54, "class": "currency-bold" },
             { "name": "∰", "color": "#ff0083", "value": 1e51 },
