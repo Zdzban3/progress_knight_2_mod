@@ -159,7 +159,7 @@ function setCustomEffects() {
 
     const deepFlow = gameData.taskData["Deep Flow"]
     deepFlow.getEffect = function () {
-        return 1 + getBaseLog(deepFlow.isHero ? 1.005 : 10, 0.2 * deepFlow.level + 1)
+        return 1 + 0.8 * getBaseLog(deepFlow.isHero ? 1.005 : 10, 0.05 * deepFlow.level + 1)
    }
 
     const profoundMeditation = gameData.taskData["Profound Meditation"]
@@ -169,7 +169,7 @@ function setCustomEffects() {
 
     const temporalDimension = gameData.taskData["Temporal Dimension"]
     temporalDimension.getEffect = function () {
-        return 1 + 1.3 * getBaseLog(temporalDimension.isHero ? 1.005 : 10, 2 * temporalDimension.level ** 2 + 1)
+        return 1 + 1 * getBaseLog(temporalDimension.isHero ? 1.005 : 10, temporalDimension.level ** 2 + 1)
    }
 
     const intimidation = gameData.taskData["Intimidation"]
@@ -202,7 +202,7 @@ function setCustomEffects() {
 
     const timeWarping = gameData.taskData["Time Warping"]
     timeWarping.getEffect = function() {
-        return 1 + 1.2 * getBaseLog(timeWarping.isHero ? 1.005 : 10, 5 * timeWarping.level + 1)
+        return 1 + 0.8 * getBaseLog(timeWarping.isHero ? 1.005 : 10, 3 * timeWarping.level + 1)
     }
 
     const immortality = gameData.taskData["Life Essence"]
