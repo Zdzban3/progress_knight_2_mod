@@ -1,3 +1,7 @@
+version e1.0.1 / 12.02.2024
+* Added a new skill category with 3 new skills
+* Moved Meditation skill to Subconscious category
+
 version e1.0.0 / 12.02.2024
 * Added a new currency notation
 * Changed the font
