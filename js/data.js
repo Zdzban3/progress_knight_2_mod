@@ -185,6 +185,7 @@ const skillBaseData = {
     "Concentration": { name: "Concentration", maxXp: 100, heroxp: 36, effect: 0.01, description: "Skill XP" },
     "Productivity": { name: "Productivity", maxXp: 100, heroxp: 37, effect: 0.01, description: "Hero XP" },
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
+    
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
 
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
@@ -395,6 +396,8 @@ const requirementsBaseData = {
     "Concentration": new TaskRequirement([getQuerySelector("Concentration")], []),
     "Productivity": new TaskRequirement([getQuerySelector("Productivity")], [{ task: "Concentration", requirement: 5 }]),
     "Bargaining": new TaskRequirement([getQuerySelector("Bargaining")], [{ task: "Concentration", requirement: 20 }]),
+
+    // Subconscious
     "Meditation": new TaskRequirement([getQuerySelector("Meditation")], [{ task: "Concentration", requirement: 30 }, { task: "Productivity", requirement: 20 }]),
 
     // Combat
@@ -562,7 +565,8 @@ const jobCategories = {
 }
 
 const skillCategories = {
-    "Fundamentals": ["Concentration", "Productivity", "Bargaining", "Meditation"],
+    "Fundamentals": ["Concentration", "Productivity", "Bargaining"],
+    "subconscious": ["Meditation"],
     "Combat": ["Strength", "Battle Tactics", "Muscle Memory"],
     "Magic": ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
     "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
@@ -584,6 +588,7 @@ const headerRowColors = {
     "The Void": "#762B91",
     "Galactic Council": "#D5C010",
     "Fundamentals": "#55a630",
+    "Subconscious": "#360067",
     "Combat": "#e63946",
     "Magic": "#C71585",
     "Dark Magic": "#73000f",
@@ -609,6 +614,7 @@ const headerRowTextColors = {
     "The Void": "white",
     "Galactic Council": "purple",
     "Fundamentals": "purple",
+    "Subconscious": "white",
     "Combat": "pink",
     "Magic": "purple",
     "Dark Magic": "pink",
