@@ -54,7 +54,11 @@ const tooltips = {
     "Concentration": "Improve your learning speed through practising intense concentration activities.",
     "Productivity": "Learn to procrastinate less at work and receive more job experience per day.",
     "Bargaining": "Study the tricks of the trade and persuasive skills to lower any type of expense.",
+
+    // Subconscious
     "Meditation": "Fill your mind with peace and tranquility to tap into greater happiness from within.",
+    "Focus": "Through intense focus quicken the pace at which you learn new things.",
+    "Deep Flow": "Learn to become fully immersed in your work, resulting in a transformation of your sense of time.",
 
     // Combat
     "Strength": "Condition your body and strength through harsh training. Stronger individuals are paid more in the military.",
