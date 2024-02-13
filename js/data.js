@@ -232,7 +232,7 @@ const skillBaseData = {
 
     "Yin Yang": { name: "Yin Yang", maxXp: 100, heroxp: 290, effect: 0.020, description: "Essence & Evil Gain" },
     "Parallel Universe": { name: "Parallel Universe", maxXp: 100, heroxp: 300, effect: 0.02, description: "Hero & Skill XP" },
-    "Timeless": { name: "Timeless", maxXp: 1e18, heroxp: 300, effect: 0.001, description: "Gamespeed" },
+    "Timeless": { name: "Timeless", maxXp: 100, heroxp: 300, effect: 0.001, description: "Gamespeed" },
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
     "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
 
