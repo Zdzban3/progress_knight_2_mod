@@ -86,7 +86,7 @@ const tooltips = {
     "Dark Knowledge": "Sealed for a very long time, you utilize these forbidden texts for your own personal gain.",
     "Void Influence": "Tapping into the powers of the Void while combining them with evil grants you an unlimited potential.",
     "Time Loop": "Mastery is achieved when 'telling time' becomes 'telling time what to do'.",
-    "Evil Incarnate": "You have became the very thing you swore to destroy.",
+    "Evil Incarnate": "You have become the very thing you swore to destroy.",
 
     // Void Manipulation
     "Absolute Wish": "The power to fulfill absolutely any and all wishes without any limitations.",
