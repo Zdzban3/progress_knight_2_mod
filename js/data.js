@@ -184,8 +184,8 @@ const jobBaseData = {
 }
 
 const skillBaseData = {
-    "Concentration": { name: "Concentration", maxXp: 100, heroxp: 36, effect: 0.01, description: "Skill XP" },
-    "Productivity": { name: "Productivity", maxXp: 100, heroxp: 37, effect: 0.01, description: "Hero XP" },
+    "Concentration": { name: "Concentration", maxXp: 100, heroxp: 36, effect: 0.005, description: "Skill XP" },
+    "Productivity": { name: "Productivity", maxXp: 100, heroxp: 37, effect: 0.005, description: "Hero XP" },
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
     
     "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
@@ -193,10 +193,10 @@ const skillBaseData = {
     "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 42, effect: 0.01, description: "Strength XP" },
     
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 0.01, description: "Happiness" },
-    "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.01, description: "Hero & Skill XP" },
+    "Focus": { name: "Focus", maxXp: 1e4, heroxp: 40, effect: 0.0025, description: "Hero & Skill XP" },
     "Deep Flow": { name: "Deep Flow", maxXp: 1e6, heroxp: 41, effect: 0.005, description: "Gamespeed" },
-    "Self-Study": { name: "Self-Study", maxXp: 1e9, heroxp: 42, effect: 0.02, description: "Subconscious XP" },
-    "Profound Meditation": { name: "Profound Meditation", maxXp: 1e12, heroxp: 43, effect: 0.02, description: "Meditation XP" },
+    "Self-Study": { name: "Self-Study", maxXp: 1e9, heroxp: 42, effect: 0.025, description: "Subconscious XP" },
+    "Profound Meditation": { name: "Profound Meditation", maxXp: 1e12, heroxp: 43, effect: 0.025, description: "Meditation XP" },
 
     "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "T.A.A. XP" },
     "Life Essence": { name: "Life Essence", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
@@ -213,10 +213,10 @@ const skillBaseData = {
     "Blood Meditation": { name: "Blood Meditation", maxXp: 100, heroxp: 176, effect: 0.01, description: "Evil Gain" },
     "Demon's Wealth": { name: "Demon's Wealth", maxXp: 100, heroxp: 178, effect: 0.002, description: "Hero Pay" },
     "Dark Knowledge": { name: "Dark Knowledge", maxXp: 100, heroxp: 180, effect: 0.003, description: "Hero XP" },
-
     "Void Influence": { name: "Void Influence", maxXp: 100, heroxp: 206, effect: 0.0028, description: "Hero & Skill XP" },
     "Time Loop": { name: "Time Loop", maxXp: 100, heroxp: 207, effect: 0.001, description: "Gamespeed" },
     "Evil Incarnate": { name: "Evil Incarnate", maxXp: 100, heroxp: 208, effect: 0.01, description: "Skill XP" },
+    
     "Absolute Wish": { name: "Absolute Wish", maxXp: 100, heroxp: 198, effect: 0.005, description: "Evil Gain" },
     "Void Amplification": { name: "Void Amplification", maxXp: 100, heroxp: 251, effect: 0.01, description: "The Void XP" },
     "Mind Release": { name: "Mind Release", maxXp: 100, heroxp: 251, effect: 0.0006, description: "Increased Happiness" },
