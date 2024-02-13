@@ -235,7 +235,7 @@ const skillBaseData = {
     "Timeless": { name: "Timeless", maxXp: 100, heroxp: 300, effect: 0.001, description: "Gamespeed" },
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
     "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
-    "Essence Brewing": { name: "Essence Brewing", maxXp: 1e9, heroxp: 300, effect: 0.0001, description: "Essence Gain" },
+    "Essence Brewing": { name: "Essence Brewing", maxXp: 1e18, heroxp: 300, effect: 0.0001, description: "Essence Gain" },
 
     "Dark Prince": { name: "Dark Prince", maxXp: 100, heroxp: 350, effect: 0.01, description: "Skill XP" },
     "Dark Ruler": { name: "Dark Ruler", maxXp: 100, heroxp: 375, effect: 0.0000015, description: "Dark Matter Gain" },
