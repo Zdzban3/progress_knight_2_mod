@@ -910,6 +910,7 @@ function applyMilestones() {
                 gameData.evil = 1
             if (gameData.evil < getEvilGain())
                 gameData.evil *= Math.pow(1.001, 1)
+                gameData.evil += getEvilGain() * 0.001
         }
 
         if (gameData.requirements["Hell Portal"].isCompleted()) {
@@ -918,6 +919,7 @@ function applyMilestones() {
             if (gameData.evil < getEvilGain()) {
                 const exponent = gameData.requirements["Mind Control"].isCompleted() ? 1.07 : 1.01
                 gameData.evil *= Math.pow(exponent, 1)
+                gameData.evil += getEvilGain() * 0.01
             }
         }
 
