@@ -177,7 +177,7 @@ function setCustomEffects() {
 
     const timeless = gameData.taskData["Timeless"]
     timeless.getEffect = function () {
-        return 1 + 0.3 * getBaseLog(timeless.isHero ? 2 : 10, timeless.level ** 0.2 + 1)
+        return 1 + 1.5 ** (0.1 * getBaseLog(timeless.isHero ? 2 : 10, timeless.level ** 0.1 + 1))
    }
 
     const intimidation = gameData.taskData["Intimidation"]
