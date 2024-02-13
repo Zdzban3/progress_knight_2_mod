@@ -910,10 +910,10 @@ function applyMilestones() {
             if (gameData.evil == 0)
                 gameData.evil = 1
             if (gameData.evil > getEvilGain()) 
-                gameData.evil += getEvilGain() * 1e-6
+                gameData.evil += getEvilGain() * 1e-7
             if (gameData.evil < getEvilGain())
                 gameData.evil *= Math.pow(1.001, 1)
-                gameData.evil += getEvilGain() * 1e-5
+                gameData.evil += getEvilGain() * 1e-6
         }
 
         if (gameData.requirements["Hell Portal"].isCompleted()) {
