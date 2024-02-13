@@ -374,6 +374,7 @@ function getEvilGain() {
 
 function getEssenceGain() {
     const essenceControl = gameData.taskData["Yin Yang"]
+    const essenceBrewing = gameData.taskData["Yin Yang"]
     const essenceCollector = gameData.taskData["Essence Collector"]
     const transcendentMaster = milestoneData["Transcendent Master"]
     const faintHope = milestoneData["Faint Hope"]
@@ -383,7 +384,7 @@ function getEssenceGain() {
     const theNewGold = gameData.requirements["The new gold"].isCompleted() ? 1000 : 1
     const lifeIsValueable = gameData.requirements["Life is valueable"].isCompleted() ? gameData.dark_matter : 1
 
-    return essenceControl.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
+    return essenceControl.getEffect() * essenceBrewing.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
         * faintHope.getEffect() * rise.getEffect() * getChallengeBonus("dance_with_the_devil")
         * getAGiftFromGodEssenceGain() * darkMagician.getEffect() * getDarkMatterSkillEssence() 
         * theNewGold * lifeIsValueable *  essenceMultGain()
