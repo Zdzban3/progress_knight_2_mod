@@ -172,6 +172,9 @@ const tooltips = {
     "Custom Galaxy": "You know about the pocket dimension, right?",
     "Hypersphere": "You gain the limitless pow... ah, you're already omnipotent...",
 
+    // Pets
+    "Kitten": "Meow!",
+
     // Essence Milestones
     "Magic Eye": "The Eye in your Amulet starts to glow.",
     "Almighty Eye": "The Eye in your Amulet shines like a star.",
