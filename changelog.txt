@@ -1,6 +1,8 @@
 version e1.0.3 / 12.02.2024
 * Added 1 new dark orb buyable
 * Added highest days stat
+* Added a feline friend
+* Changed the dark orbs to show their effect for the next buyable upgrade
 
 version e1.0.2 / 12.02.2024
 * Added 1 new skill
