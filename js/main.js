@@ -172,7 +172,12 @@ function setCustomEffects() {
 
     const temporalDimension = gameData.taskData["Temporal Dimension"]
     temporalDimension.getEffect = function () {
-        return 1 + 1 * getBaseLog(temporalDimension.isHero ? 1.005 : 10, temporalDimension.level ** 2 + 1)
+        return 1 + getBaseLog(temporalDimension.isHero ? 1.005 : 10, temporalDimension.level ** 2 + 1)
+   }
+
+    const timeless = gameData.taskData["Timeless"]
+    timeless.getEffect = function () {
+        return 1 + 0.3 * getBaseLog(timeless.isHero ? 2 : 10, timeless.level ** 0.2 + 1)
    }
 
     const intimidation = gameData.taskData["Intimidation"]
@@ -423,13 +428,14 @@ function getUnpausedGameSpeed() {
     const boostWarping = gameData.boost_active ? gameData.metaverse.boost_warp_modifier : 1
     const timeWarping = gameData.taskData["Time Warping"]
     const temporalDimension = gameData.taskData["Temporal Dimension"]
+    const timeless = gameData.taskData["Timeless"]
     const deepFlow = gameData.taskData["Deep Flow"]
     const timeLoop = gameData.taskData["Time Loop"]
     const warpDrive = (gameData.requirements["Eternal Time"].isCompleted()) ? 2 : 1
     const speedSpeedSpeed = gameData.requirements["Speed speed speed"].isCompleted() ? 1000 : 1
     const timeIsAFlatCircle = gameData.requirements["Time is a flat circle"].isCompleted() ? 1000 : 1
 
-    const timeWarpingSpeed = boostWarping * timeWarping.getEffect() * temporalDimension.getEffect() * deepFlow.getEffect() * timeLoop.getEffect() * warpDrive * speedSpeedSpeed * timeIsAFlatCircle
+    const timeWarpingSpeed = boostWarping * timeWarping.getEffect() * timeless.getEffect() * temporalDimension.getEffect() * deepFlow.getEffect() * timeLoop.getEffect() * warpDrive * speedSpeedSpeed * timeIsAFlatCircle
 
     const gameSpeed = baseGameSpeed * timeWarpingSpeed * getChallengeBonus("time_does_not_fly") * getGottaBeFastGain() * getDarkMatterSkillTimeWarping() 
 
