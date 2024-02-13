@@ -235,6 +235,7 @@ const skillBaseData = {
     "Timeless": { name: "Timeless", maxXp: 100, heroxp: 300, effect: 0.001, description: "Gamespeed" },
     "Higher Dimensions": { name: "Higher Dimensions", maxXp: 100, heroxp: 300, effect: 0.001, description: "Longer Lifespan" },
     "Epiphany": { name: "Epiphany", maxXp: 100, heroxp: 280, effect: 0.012, description: "Galactic Council XP" },
+    "Essence Brewing": { name: "Essence Brewing", maxXp: 1e9, heroxp: 300, effect: 0.0001, description: "Essence Gain" },
 
     "Dark Prince": { name: "Dark Prince", maxXp: 100, heroxp: 350, effect: 0.01, description: "Skill XP" },
     "Dark Ruler": { name: "Dark Ruler", maxXp: 100, heroxp: 375, effect: 0.0000015, description: "Dark Matter Gain" },
@@ -463,6 +464,7 @@ const requirementsBaseData = {
     "Timeless": new EssenceRequirement([getQuerySelector("Timeless")], [{ requirement: 20 }]),
     "Higher Dimensions": new EssenceRequirement([getQuerySelector("Higher Dimensions")], [{ requirement: 10000 }]),
     "Epiphany": new EssenceRequirement([getQuerySelector("Epiphany")], [{ requirement: 30000 }]),
+    "Essence Brewing": new EssenceRequirement([getQuerySelector("Essence Brewing")], [{ requirement: 1e6 }]),
 
     // Darkness
     "Dark Prince": new DarkMatterRequirement([getQuerySelector("Dark Prince")], [{ requirement: 3 }]),
@@ -592,7 +594,7 @@ const skillCategories = {
     "Dark Magic": ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
     "Void Manipulation": ["Absolute Wish", "Void Amplification", "Mind Release", "Ceaseless Abyss", "Void Symbiosis", "Void Embodiment", "Abyss Manipulation"],
     "Celestial Powers": ["Cosmic Longevity", "Cosmic Recollection", "Essence Collector", "Galactic Command"],
-    "Almightiness": ["Yin Yang", "Parallel Universe", "Timeless", "Higher Dimensions", "Epiphany"],
+    "Almightiness": ["Yin Yang", "Parallel Universe", "Timeless", "Higher Dimensions", "Epiphany", "Essence Brewing"],
     "Darkness": ["Dark Prince", "Dark Ruler", "Immortal Ruler", "Dark Magician", "Universal Ruler", "Blinded By Darkness"]
 }
 
