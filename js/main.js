@@ -908,19 +908,23 @@ function applyMilestones() {
         if (gameData.requirements["Deal with the Devil"].isCompleted() && gameData.requirements["Rebirth note 3"].isCompleted()) {
             if (gameData.evil == 0)
                 gameData.evil = 1
+            if (gameData.evil > getEvilGain()) 
+                gameData.evil += getEvilGain() * 1e-4
             if (gameData.evil < getEvilGain())
                 gameData.evil *= Math.pow(1.001, 1)
-                gameData.evil += getEvilGain() * 0.001
+                gameData.evil += getEvilGain() * 1e-3
         }
 
         if (gameData.requirements["Hell Portal"].isCompleted()) {
             if (gameData.evil == 0)
                 gameData.evil = 1
+            if (gameData.evil > getEvilGain())
+                gameData.evil += getEvilGain() * 1e-3
             if (gameData.evil < getEvilGain()) {
                 const exponent = gameData.requirements["Mind Control"].isCompleted() ? 1.07 : 1.01
                 gameData.evil *= Math.pow(exponent, 1)
-                gameData.evil += getEvilGain() * 0.01
-            }
+                gameData.evil += getEvilGain() * 1e-2
+            } 
         }
 
         if (gameData.requirements["Galactic Emperor"].isCompleted()) {
