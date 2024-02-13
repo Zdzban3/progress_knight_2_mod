@@ -909,21 +909,21 @@ function applyMilestones() {
             if (gameData.evil == 0)
                 gameData.evil = 1
             if (gameData.evil > getEvilGain()) 
-                gameData.evil += getEvilGain() * 1e-4
+                gameData.evil += getEvilGain() * 1e-6
             if (gameData.evil < getEvilGain())
                 gameData.evil *= Math.pow(1.001, 1)
-                gameData.evil += getEvilGain() * 1e-3
+                gameData.evil += getEvilGain() * 1e-5
         }
 
         if (gameData.requirements["Hell Portal"].isCompleted()) {
             if (gameData.evil == 0)
                 gameData.evil = 1
             if (gameData.evil > getEvilGain())
-                gameData.evil += getEvilGain() * 1e-3
+                gameData.evil += getEvilGain() * 1e-5
             if (gameData.evil < getEvilGain()) {
                 const exponent = gameData.requirements["Mind Control"].isCompleted() ? 1.07 : 1.01
                 gameData.evil *= Math.pow(exponent, 1)
-                gameData.evil += getEvilGain() * 1e-2
+                gameData.evil += getEvilGain() * 1e-4
             } 
         }
 
